@@ -8,7 +8,7 @@
                 font-family:'Times New Roman', Times, serif;
                 margin:auto;
                 background-color: white;
-                color: black
+                color: black;
             }
 
             h1 {
@@ -22,27 +22,42 @@
             }
 
             code{
-                background-color: lightgray;
+                background-color: black;
+                color:lightgreen;
                 padding: 2px 4px;
                 font-family: 'Courier New', Courier, monospace;
             }
 
+            ruby, rp, rt {
+                font-size: medium;
+            }
             
         </style>
     </head>
         <body>
             <h1>Welcome to the website of my first assignment!</h1>
             <p>This is the first time I've made a website in a while.</p>
-            <p>I'm looking forward to learning a lot in this class!</p>
+            <p>I'm looking forward to learning a lot in this class!</p> 
+            <p>The following are examples of elements not covered in class:</p>
             <br>
-            <p>Here is a quote in Japanese from one of my favorite anime:</p>
+
+            <p>Here is a quote in Japanese with romaji from one of my favorite anime:</p>
             <blockquote>
-                <p>「海賊王に俺はなる男だ!」</p>
+                <p><ruby>「海賊王に俺はなる男だ!」<rp>(</rp><rt>Kaizoku ou ni ore wa naru otoko da!</rt><rp>)</rp></ruby></p>
                 <p><footer> --モンキー・D・ルフィ, <cite>ONE PIECE</cite> </footer></p>
-            </blockquote>
+            </blockquote> 
+            <br>
             
             <p>A Hello, World program in Python is as simple as <code>print("Hello, World!")</code></p>
+            <br>
 
+            <p>Here is a fun button to click</p>
 
+            <button onclick="alert('Thank you for clicking!')">Please click me!</button>
+
+            <p>I can be contacted at:</p>
+            <address>
+                <a href = "mailto:jcordero1@spscc.edu"> jcordero1@spscc.edu</a>
+            </address>
         </body>
 </html>
