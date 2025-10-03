@@ -7,5 +7,8 @@ Date: 2 October 2025
 
 # Project Overview
 
+Lorem ipsum dolor sit amet
 
+# HTML Elements Used
 
+1. <blockquote>
