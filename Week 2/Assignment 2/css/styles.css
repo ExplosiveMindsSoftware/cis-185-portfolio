@@ -20,7 +20,7 @@
 header {background: lightgray; padding: 10px; align-items: center;}
 main {text-align: center;}
 footer {padding:5px} 
-img{border: 10px; border-style:solid; border-radius:10%}
+img{border: 7px; border-style:solid; border-radius:10%}
 .site-header .container{
     display:flex;
     justify-content: space-between;
@@ -38,9 +38,39 @@ img{border: 10px; border-style:solid; border-radius:10%}
     align-items:right;
 }
 
+.site-header nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.site-header nav a:hover {
+    text-decoration: underline;
+}
 .logogroup h1 {
     margin:0;
 }
 .tagline {
     margin:0;
+}
+
+.projects-section{
+  padding:32px;
+}
+
+.project-cards{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  background-color: var(--card-background);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  flex-basis: 300px; /* Each card will try to be 300px wide */
+  text-align: left;
 }
