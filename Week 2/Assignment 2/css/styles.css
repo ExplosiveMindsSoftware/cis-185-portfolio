@@ -1,1 +1,43 @@
-* { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+ :root{
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --header-footer-bg: #222;
+    --header-footer-text: #fff;
+ }
+ 
+ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; }
+
+.holy-grail {
+  display: grid;
+  grid-template-areas:
+    "header header header="
+    "main main sidebar"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+}
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+aside { grid-area: sidebar; }
+footer { grid-area: footer; } 
+
+header {
+
+    background: lightgray;
+    color: black;
+    padding: 10px;
+    text-align: left;
+
+}
+
+
+
