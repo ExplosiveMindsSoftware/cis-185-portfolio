@@ -8,6 +8,7 @@
     --primary-color: lightgray;
     --secondary-color: #f4f4f4;
     --text-color: black;
+    --card-background: lightgray;
  }
  
  html, body { height: 100%; margin: 0; font-family: 'Source Code Pro', monospace;}
@@ -21,6 +22,7 @@ header {background: lightgray; padding: 10px; align-items: center;}
 main {text-align: center;}
 footer {padding:5px} 
 img{border: 7px; border-style:solid; border-radius:10%}
+
 .site-header .container{
     display:flex;
     justify-content: space-between;
@@ -47,9 +49,11 @@ img{border: 7px; border-style:solid; border-radius:10%}
 .site-header nav a:hover {
     text-decoration: underline;
 }
+
 .logogroup h1 {
     margin:0;
 }
+
 .tagline {
     margin:0;
 }
@@ -73,4 +77,44 @@ img{border: 7px; border-style:solid; border-radius:10%}
   padding: 16px;
   flex-basis: 300px; /* Each card will try to be 300px wide */
   text-align: left;
+}
+
+.contact-section {
+  padding: 32px 0;;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column; /* Stacks the form elements vertically */
+  gap: 10px;
+  max-width: 600px; /* Keeps the form from getting too wide */
+  margin: 0 auto;   /* Centers the form on the page */
+  text-align: left;
+}
+
+.contact-section label {
+  font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  font-family: 'Source Code Pro', monospace;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-section button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.contact-section button:hover {
+  opacity: 0.9;
 }

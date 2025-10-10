@@ -11,8 +11,10 @@
     <body class = "grid-container">
         <header class = "site-header">
             <div class = "container">
-            <h1>Jorge Cordero Jr</h1>
-            <p class = "tagline">Aspiring Developer</p>
+                <div class = "logogroup">
+                <h1>Jorge Cordero Jr</h1>
+                <p class = "tagline">Aspiring Developer</p>
+                </div>
             <nav>
                 <ul>
                     <li><a href = "#">Home</a></li>
@@ -45,14 +47,29 @@
                 </div>
 
                 <div class = "card">
-                    <h3>Project 3: </h3>
-                    <img src = "images/jsgame.png" alt = "Screenshot of JavaScript game", width = "275" height = "150">
-                    <p>A simple JavaScript game</p>
+                    <h3>Project 3: Video Game Store App</h3>
+                    <img src = "images/gamestoreapp.png" alt = "Screenshot of game store app", width = "275" height = "150">
+                    <p>A C# app I worked on with a team</p>
                 </div>
             </div>
         </section>
-        </main>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        </main>
         <footer>
             <p>&copy; 2025 Explosive Minds Software - All Rights Reserved</p>
         </footer>
