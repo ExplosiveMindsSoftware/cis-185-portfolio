@@ -11,13 +11,13 @@ The goal of this project is to create a personal portfolio using flexbox and gri
 
 # Flexbox and Grid Implementation
 
-Flexbox was utilized for the navigation in the header and the project cards section. 
+Flexbox was utilized for the navigation in the header and the project cards and contact me sections. 
 
- I used flexbox in the header to have the contents in a line, give them padding, add a background color, put the navigation in a list, and bold the navigation links and underline them when hovered over.
+I used flexbox in the header to have the contents in a line, give them padding, spacing, add a background color, put the navigation in a list, and bold the navigation links and underline them when hovered over. 
 
- I used flexbox in the project cards to give them a background color, padding, center the cards, and 
+I used flexbox in the project cards to give them a background color, padding, spacing, and put them in a line. It's a similar story with the contact me section, but without the background color.
 
-I used grid for the overall layout of the page.
+I used grid for the overall layout of the page. I used grid for the image borders, content layout, and the copyright footer.
 
 # How to View
 
