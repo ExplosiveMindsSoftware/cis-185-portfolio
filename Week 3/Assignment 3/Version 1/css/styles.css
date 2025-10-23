@@ -18,7 +18,7 @@
   grid-template-rows: auto 1fr auto;
 }
 
-header {min-heigh: 5vh; background: lightgray; padding: 10px; align-items: center;}
+header {min-height: 5vh; background: lightgray; padding: 10px; align-items: center;}
 main {text-align: center;}
 footer {padding:5px} 
 img{max-width: 100%; height: auto; border: 7px; border-style:solid; border-radius:10%}
