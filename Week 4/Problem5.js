@@ -49,15 +49,35 @@ function rotateArray(arr, positions) {
     return rotatedArray;
 }
 
+//Help with second largest function provided by Google Gemini https://gemini.google.com/share/4e54ca37d16d
 //Function to find the second largest number in an array
 function findSecondLargest(arr) {
-    //Initializes largest and second largest variables
-    let largest;
-    let secondLargest;
 
+    //If statement to check if there are less than two elements in the array
+    if(arr.length < 2){
+        return null;
+    }
+
+    //Initializes largest and second largest variables
+    let largest = 0;
+    let secondLargest = 0;
+
+    //For loop to go through the array
     for(let i = 0; i < arr.length; i++){
 
+        //If statement to check if current element is the largest
+        if(arr[i] > largest){
+            secondLargest = largest;
+            largest = arr[i];
+        }
+
+        //Else if statement to check if the current element is less than the largest, but greater than the second largest
+        else if (arr[i] < largest && arr[i] > secondLargest){
+            secondLargest = arr[i];
+        }
     }
+
+    return secondLargest
 }
 
 //Test Cases
