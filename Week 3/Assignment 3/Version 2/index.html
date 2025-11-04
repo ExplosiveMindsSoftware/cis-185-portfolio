@@ -11,28 +11,31 @@
     </head>
     <body>
         <header class = "header-container">
-            <div class = "header-content">
+            <div class = "header-content text-center p-4">
                 <h1>Jorge Cordero Jr</h1>
                 <h4>Aspiring Developer</h4>
             </div>
-            <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+            <nav class = "navbar navbar-expand-lg navbar-light bg-secondary">
                 <div class = "container-fluid">
                     <a class = "navbar-brand" href="#">Navigation</a>
                     <div class = "navbar-nav">
                         <a class = "nav-link active" href="#">Home</a>
-                        <a class = "nav-link"  href = "#">About Me</a>
-                        <a class = "nav-link" href = "#">Projects</a>
+                        <a class = "nav-link"  href="#">About Me</a>
+                        <a class = "nav-link" href="#">Projects</a>
                     </div>
                 </div>
             </nav>
         </header>
 
         <main>
+            <section id="about" class="about-section">
+            <div class = "container text-center p-4">
             <h2>About Me</h2>
-            <img src = "images/me.png" alt = "Self portrait of Jorge Cordero Jr wearing a gray suit", width = "300" height = "400">
+            <img src = "images/me.png" alt = "Self portrait of Jorge Cordero Jr wearing a gray suit", width = "300" height = "400" class = "border border-5 border-dark rounded">
             <p>Welcome! My name is Jorge Cordero Jr, and I'm an aspiring developer originally from Juneau, Alaska.</p>
             <p>Since childhood, I have aspired to become a software and web developer. Every day, I'm working my way up to that dream, step by step.</p>
 
+            <section id="projects" class="projects-section">
             <h2>Projects</h2>
             <p>Here are some of the projects I have worked on:</p>
                 <div class = "card">
@@ -57,6 +60,7 @@
                 </div>
             </div>
         </section>
+
         <section id="contact" class="contact-section">
             <h2>Contact Me</h2>
             <form>
