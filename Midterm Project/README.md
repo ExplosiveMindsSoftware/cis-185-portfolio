@@ -28,6 +28,7 @@ index.html is the homepage, contact.html is the contact page, and about.html is 
 # Challenges Faced
 
 
+
 # AI Tools Used
 
 I used Google Gemini to help with custom CSS.
@@ -44,7 +45,15 @@ Asterix the Gaul image from Wikipedia: https://en.wikipedia.org/wiki/Asterix_the
 
 La Familia Burron image from AbeBooks: https://pictures.abebooks.com/isbn/9789700770864-us.jpg
 
-Scott Pilgrim Image from Amazon: https://m.media-amazon.com/images/I/814D-wJNPVL._AC_UF1000,1000_QL80_.jpg
+Scott Pilgrim image from Amazon: https://m.media-amazon.com/images/I/814D-wJNPVL._AC_UF1000,1000_QL80_.jpg
+
+V for Vendetta image from Wikipedia: https://upload.wikimedia.org/wikipedia/en/c/c0/V_for_vendettax.jpg
+
+One Piece image from Amazon: https://m.media-amazon.com/images/I/91NxYvUNf6L._AC_UF1000,1000_QL80_.jpg
+
+Batman: The Killing Joke image from Amazon: https://m.media-amazon.com/images/I/91OjBx3hSNL._AC_UF1000,1000_QL80_.jpg
+
+Comic readers image from Inside Hook: https://www.insidehook.com/wp-content/uploads/2022/10/comicbookboys.jpg?fit=1200%2C800
 
 Help with phone link: https://stackoverflow.com/questions/53270766/how-do-i-hyperlink-a-phone-number
 
