@@ -15,11 +15,13 @@ Comic book enthusiasts of all ages who want the latest and classic comics and a 
 
 Feature 1: Responsive design for mobile
 
-Feature 2: 
+Feature 2: Hover animation for featured comics cards
+
+Feature 3: Form validation for email us form
 
 # Technologies Used
 
-I used HTML5, CSS3, and JavaScript for this project.
+I used HTML5 for semantics, CSS3 and Bootstrap for styling and hover animation, and JavaScript for form validation and send confirmation.
 
 # File Structure
 
