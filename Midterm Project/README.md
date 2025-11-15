@@ -55,6 +55,8 @@ Batman: The Killing Joke image from Amazon: https://m.media-amazon.com/images/I/
 
 Comic readers image from Inside Hook: https://www.insidehook.com/wp-content/uploads/2022/10/comicbookboys.jpg?fit=1200%2C800
 
+Help with hero image implementation from W3 Schools: https://www.w3schools.com/howto/howto_css_hero_image.asp
+
 Help with phone link: https://stackoverflow.com/questions/53270766/how-do-i-hyperlink-a-phone-number
 
 Hero image from StockCake: https://images.stockcake.com/public/6/4/7/647c6899-3247-4fc3-87f5-267384c7a0da_large/vintage-comics-display-stockcake.jpg

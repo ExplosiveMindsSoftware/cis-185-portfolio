@@ -52,3 +52,10 @@ footer {
     padding: 100px 20px;
     font-family: 'Bangers', cursive;
 }
+
+.card {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Enlarge the card by 5% on hover */
