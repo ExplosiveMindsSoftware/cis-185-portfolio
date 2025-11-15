@@ -33,18 +33,6 @@ footer {
     border-top: 4px solid #000000;
 }
 
-/* Style for the comic cards */
-.comic-card {
-    border: 2px solid #000000; /* Black border on cards */
-    margin-bottom: 24px; /* Space between cards on mobile */
-    box-shadow: 5px 5px 0px rgba(0,0,0,0.75); /* Comic-style drop shadow */
-    transition: all 0.2s ease-in-out;
-}
-
-.comic-card:hover {
-    transform: scale(1.02); /* Slight zoom on hover */
-}
-
 .card-title {
     color: #d92323; /* Red title */
 }
