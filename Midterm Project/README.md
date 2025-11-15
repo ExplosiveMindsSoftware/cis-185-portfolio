@@ -30,3 +30,5 @@ Date: 14 November 2025
 # Credits
 
 Help with project provided by Google Gemini: 
+
+Asterix the Gaul image from Wikipedia: https://en.wikipedia.org/wiki/Asterix_the_Gaul#/media/File:Asterix_the_Gaul.png
