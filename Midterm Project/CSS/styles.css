@@ -59,3 +59,4 @@ footer {
 
 .card:hover {
   transform: scale(1.05); /* Enlarge the card by 5% on hover */
+}
