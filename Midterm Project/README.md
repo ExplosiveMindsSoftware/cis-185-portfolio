@@ -41,7 +41,7 @@ I used Google Gemini to help with custom CSS and the form validation with JavaSc
 
 # Future Improvements
 
-If I had more time, I would have added a search function to search for comics using the Comic Vine API, along with creating a page for store inventory. I also would have styled the entire website to look like a comic book with comic panels.
+If I had more time, I would have added a search function to search for comics using the Comic Vine API and HTTP requests and responses, along with creating a page for store inventory. I also would have styled the entire website to look like a comic book with comic panels.
 
 # Credits
 
