@@ -9,19 +9,23 @@ This is a comic book shop website for the fictional "Comics Global" comic store.
 
 # Target Audience
 
-Comic book enthusiasts of all ages who want the latest and classic comics and a place to hang out.
+Comic book enthusiasts of all ages who want comics both old and new and from around the world, as well as a place to hang out.
 
 # Main Features
 
 Feature 1: Responsive design for mobile
 
-Feature 2: Hover animation for featured comics cards
+Feature 2: Info cards with six different comics
 
-Feature 3: Form validation for email us form
+Feature 3: Hover animation for featured comics cards
+
+Feature 4: Form validation for email us form
+
+Feature 5: Clickable link for phone number
 
 # Technologies Used
 
-I used HTML5 for semantics, CSS3 and Bootstrap for styling and hover animation, and JavaScript for form validation and send confirmation.
+I used HTML5 for semantic structure, CSS3 and Bootstrap for styling and comic card hover animation, and JavaScript for form validation and message send confirmation.
 
 # File Structure
 
@@ -29,19 +33,19 @@ index.html is the homepage, contact.html is the contact page, and about.html is 
 
 # Challenges Faced
 
-
+At first, I had a hard time choosing the style for the website. I used Gemini to generate custom CSS to go with my Bootstrap code. I also used Gemini to help me with the JavaScript script for form validation, as I was having a hard time approaching that.
 
 # AI Tools Used
 
-I used Google Gemini to help with custom CSS.
+I used Google Gemini to help with custom CSS and the form validation with JavaScript.
 
 # Future Improvements
 
-
+If I had more time, I would have added a search function to search for comics using the Comic Vine API, along with creating a page for store inventory. I also would have styled the entire website to look like a comic book with comic panels.
 
 # Credits
 
-Help with project provided by Google Gemini: 
+Help with project provided by Google Gemini: https://gemini.google.com/share/c3f298263dc6
 
 Asterix the Gaul image from Wikipedia: https://en.wikipedia.org/wiki/Asterix_the_Gaul#/media/File:Asterix_the_Gaul.png
 
