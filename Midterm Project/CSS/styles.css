@@ -1,3 +1,65 @@
-h1 {
+body {
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive; /* Use comic font for all headers */
+}
+
+/* Style the header to make it pop */
+.header-content {
+    background-color: #d92323 !important; /* Comic book red */
+    color: #ffffff;
+    border-bottom: 4px solid #000000; /* Thick black border */
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Style the main navbar */
+.navbar {
+    border-bottom: 2px solid #000000;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    background-color: #333;
+    color: #ffffff;
+    border-top: 4px solid #000000;
+}
+
+/* Style for the comic cards */
+.comic-card {
+    border: 2px solid #000000; /* Black border on cards */
+    margin-bottom: 24px; /* Space between cards on mobile */
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.75); /* Comic-style drop shadow */
+    transition: all 0.2s ease-in-out;
+}
+
+.comic-card:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.card-title {
+    color: #d92323; /* Red title */
+}
+
+.btn-buy {
+    background-color: #d92323;
+    color: #ffffff;
     font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    border: 2px solid #000000;
+}
+
+.btn-buy:hover {
+    background-color: #a31a1a;
+    color: #ffffff;
+    border-color: #000000;
 }
