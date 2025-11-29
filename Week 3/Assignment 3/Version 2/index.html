@@ -10,75 +10,99 @@
 
     </head>
     <body>
-        <header class = "header-container">
-            <div class = "header-content text-left p-2 bg-secondary">
-                <h1 class = "fw-bold">Jorge Cordero Jr</h1>
-                <p class = "leading-text">Aspiring Developer</p>
-                <nav class = "navbar navbar-expand-lg">
-                        <ul class = "nav nav-bar ms-auto">
-                            <a class = "nav-link active" href="#">Home</a>
-                            <a class = "nav-link"  href="#">About Me</a>
-                            <a class = "nav-link" href="#">Projects</a>
-                        </ul>
-                </nav>
-            </div>
+        <header>
+            <nav class = "navbar bg-secondary">
+                <div class = "container-fluid">
+                    <div class = "logogroup">
+                        <h1 class = "fw-bold">Jorge Cordero Jr</h1>
+                        <p class = "tagline mb-0">Aspiring Developer</p>
+                    </div>
+                    <ul class = "nav nav-bar ms-auto">
+                        <a class = "nav-link active" href="#">Home</a>
+                        <a class = "nav-link"  href="#">About Me</a>
+                        <a class = "nav-link" href="#">Projects</a>
+                    </ul>
+                </div>
+            </nav>
         </header>
 
         <main>
-            <section id="about" class="about-section">
-            <div class = "container text-center p-4">
-            <h2 class = "p-3">About Me</h2>
-            <img src = "images/me.png" alt = "Self portrait of Jorge Cordero Jr wearing a gray suit", width = "300" height = "400" class = "border border-5 border-dark rounded">
-            <p class = "pt-4">Welcome! My name is Jorge Cordero Jr, and I'm an aspiring developer originally from Juneau, Alaska.</p>
-            <p>Since childhood, I have aspired to become a software and web developer. Every day, I'm working my way up to that dream, step by step.</p>
+            <section id="about" class="my-5">
+                <div class = "container text-center p-4">
+                <h2 class = "p-3">About Me</h2>
+                <img src = "images/me.png" alt = "Self portrait of Jorge Cordero Jr wearing a gray suit", width = "300" height = "400" class = "border border-5 border-dark rounded">
+                <p class = "pt-4">Welcome! My name is Jorge Cordero Jr, and I'm an aspiring developer originally from Juneau, Alaska.</p>
+                <p>Since childhood, I have aspired to become a software and web developer. Every day, I'm working my way up to that dream, step by step.</p>
+                
+            
+                <section id="projects" class="my-5">
+                <h2 class = "p-3">Projects</h2>
+                <p>Here are some of the projects I have worked on:</p>
+                
+                </div>
 
-            <section id="projects" class="projects-section">
-            <h2>Projects</h2>
-            <p>Here are some of the projects I have worked on:</p>
-                <div class = "card">
-                    <img src = "images/metaportfolio.png" class = "card-img-top" alt = "Screenshot of portfolio website">
-                    <div class = "card-body">
-                        <h3 class = "card-title">Project 1: Portfolio Website</h3>
-                        <p class = "card-text">This portfolio webpage</p>
+                <div class = "row">
+                    <div class = "col-md-4">
+                        <div class = "card">
+                            <img src = "images/metaportfolio.png" class = "card-img-top" alt = "Screenshot of portfolio website">
+                            <div class = "card-body">
+                                <h3 class = "card-title">Project 1: Portfolio Website</h3>
+                                <p class = "card-text">This portfolio webpage</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class = "card">
-                    <img src = "images/testwebsite.png" class = "card-img-top" alt = "Screenshot of experiment website">
-                    <div class = "card-body">
-                        <h3 class = "card-title">Project 2: Experiment Website</h3>
-                    <p>My first webpage</p>
-                </div>
-
-                <div class = "card">
-                    <img src = "images/gamestoreapp.png" alt = "Screenshot of game store app", width = "275" height = "150">
-                    <div class = "card-body">
-                        <h3 class = "card-title">Project 3: Video Game Store App</h3>    
-                        <p class = "card-text">A C# app I worked on with a team</p>
+                
+                
+                
+                    <div class = "col-md-4">
+                        <div class = "card">
+                            <img src = "images/testwebsite.png" class = "card-img-top" alt = "Screenshot of experiment website">
+                            <div class = "card-body">
+                                <h3 class = "card-title">Project 2: Experiment Website</h3>
+                                <p>My first webpage</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class = "col-md-4">
+                        <div class = "card">
+                            <img src = "images/gamestoreapp.png" alt = "Screenshot of game store app", width = "275" height = "150">
+                            <div class = "card-body">
+                                <h3 class = "card-title">Project 3: Video Game Store App</h3>    
+                                <p class = "card-text">A C# app I worked on with a team</p>
+                            </div>
+                        </div>
+                    </div> 
+                
                 </div>
+            </section>
+
+        <section id="contact" class="my-5">
+            <div class = "container">
+                <h2 class = "text-center mb-4">Contact Me</h2>
+                <form class = "col-lg-8 mx-auto">
+                    <div class = "mb-3">
+                        <label for="name">Name:</label>
+                        <input type="text" class = "form-control" id="name" name="name" required>
+                    </div>
+
+                    <div class = "mb-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class = "form-control" id="email" name="email" required>
+                    </div>
+
+                    <div class = "mb-3">
+                        <label for="message">Message:</label>
+                        <textarea id="message" class = "form-control" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
         </section>
 
         </main>
         <footer>
-            <p>&copy; 2025 Explosive Minds Software - All Rights Reserved</p>
+            <p class = "p-3">&copy; 2025 Explosive Minds Software - All Rights Reserved</p>
         </footer>
     </body>
 </html>
