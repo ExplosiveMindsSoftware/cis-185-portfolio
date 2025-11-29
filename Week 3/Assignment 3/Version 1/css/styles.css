@@ -119,7 +119,7 @@ img{max-width: 100%; height: auto; border: 7px; border-style:solid; border-radiu
   opacity: 0.9;
 }
 
-* Mobile (320px - 767px) */
+/* Mobile (320px - 767px) */
 @media (max-width: 767px) {
   .site-header .container {
     flex-direction: column;
