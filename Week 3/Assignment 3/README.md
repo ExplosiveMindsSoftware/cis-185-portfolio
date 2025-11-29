@@ -7,7 +7,13 @@ Date: 16 October 2025
 
 ## Project Overview
 
-This project displays and compares two versions of my portfolio website with responsive design: one with manual CSS and the other with Bootstrap.
+This project displays and compares two versions of my portfolio website with responsive design:
+
+#### Version 1
+Manual responsiveness with flexbox, media queries, and custom CSS.
+
+#### Version 2
+Responsiveness using the Bootstrap 5 framework.
 
 ## Complexity Comparison
 
@@ -29,7 +35,7 @@ This project displays and compares two versions of my portfolio website with res
 * Fast development time
 
 ### Boostrap Cons: 
-* Less direct control over design
+* Designs can be generic without supplementary custom CSS
 * 
 
 ## Preference
@@ -37,3 +43,5 @@ This project displays and compares two versions of my portfolio website with res
 I feel like using a combination of both is optimal. 
 
 ## Resources Used
+
+Help with assignment provided by Google Gemini: https://gemini.google.com/share/1853ba86b1b0
