@@ -6,7 +6,7 @@ function TaskInput({onAddTask}) {
   const [text, setText] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(text.trim === " ") return;
+    if(text.trim() === "") return;
 
     onAddTask(text);
     setText('');
@@ -64,35 +64,35 @@ function TaskItem ({task, onToggleComplete, onDelete}) {
 
 }
 
-function FilterButtons ({currentFilter, onChangeFilter}) {
+function FilterButtons ({currentFilter, setFilter}) {
   return (
     <div className = "filter-buttons">
       <button
         className = {currentFilter === 'all' ? 'active' : ''}
-        onClick = {() => onChangeFilter('all')}>All</button>
+        onClick = {() => setFilter('all')}>All</button>
 
       <button
         className = {currentFilter === 'active' ? 'active' : ''}
-        onClick = {() => onChangeFilter('active')}>Active</button>
+        onClick = {() => setFilter('active')}>Active</button>
   
       <button
         className = {currentFilter === 'completed' ? 'active' : ''}
-        onClick = {() => onChangeFilter('completed')}>Completed</button>
+        onClick = {() => setFilter('completed')}>Completed</button>
     </div>
   )
 
 }
 
 function App(){
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    const savedTasks = localStorage.getItem('tasks');
+    if (savedTasks) {
+      return JSON.parse(savedTasks);
+    } else {
+      return [];
+    } 
+  });
   const [filter, setFilter] = useState('all');
-
-  useEffect(() => {
-    const saved = localStorage.getItem('tasks');
-    if (saved) {
-      setTasks(JSON.parse(saved));
-    }
-  }, []);
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
