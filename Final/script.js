@@ -5,6 +5,7 @@ window.addEventListener ('load', function () {
     // Set canvas dimensions
     canvas.width=800;
     canvas.height=720;
+    let enemies = [];
 
     //Class to handle player input
     class InputHandler {
@@ -53,8 +54,8 @@ window.addEventListener ('load', function () {
             context.fillRect(this.x, this.y, this.width, this.height);
             context.drawImage(this.image, this.frameX * this.width, this.frameY * this.height, this.width, this.height, this.x, this.y, this.width, this.height);
         }
+
         update(input){
-            this.x += this.speed;
             if(input.keys.indexOf('ArrowRight') > -1){
                 this.speed = 5;
             }
@@ -108,7 +109,7 @@ window.addEventListener ('load', function () {
         }
             draw(context){
                 context.drawImage(this.image, this.x, this.y, this.width, this.height);
-                context.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
+                context.drawImage(this.image, this.x + this.width - this.speed, this.y, this.width, this.height);
             }
 
             update(){
@@ -118,11 +119,40 @@ window.addEventListener ('load', function () {
     }
 
     class Enemy {
+        constructor(gameWidth, gameHeight){
+            this.gameWidth = gameWidth;
+            this.gameHeight = gameHeight;
+            this.width = 202;
+            this.height = 55;
+            this.image = document.getElementById('NavyEnemy');
+            this.x = this.gameWidth;
+            this.y = this.gameHeight - this.height;
+            this.frameX = 0;
+        }
 
+        draw(context){
+            context.drawImage(this.image, this.frameX * this.width, 0, this.width, this.height, this.x, this.y, this.width, this.height);
+        }
+
+        update(){
+            this.x--;
+        }
     }
 
-    function handleEnemies(){
+    function handleEnemies(deltaTime){
+        if (enemyTimer > enemyInterval){
+            enemies.push(new Enemy(canvas.width, canvas.height));
+            enemyTimer = 0;
+        } 
+        
+        else {
+            enemyTimer += deltaTime;
+        }
 
+        enemies.forEach(enemy => {
+            enemy.draw(ctx);
+            enemy.update();
+        });
     }
 
     function displayStatusText(){
@@ -133,15 +163,22 @@ window.addEventListener ('load', function () {
     const player = new Player(canvas.width, canvas.height);
     const background = new Background(canvas.width, canvas.height);
 
-    function animate(){
+    let lastTime = 0;
+    let enemyTimer = 0;
+    let enemyInterval = 1000;
+
+    function animate(timeStamp){
+        const deltaTime = timeStamp - lastTime;
+        lastTime = timeStamp;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         background.draw(ctx);
         background.update();
         player.draw(ctx);
         player.update(input);
+        handleEnemies(deltaTime);
         requestAnimationFrame(animate);
     }
 
-    animate();
+    animate(0);
 
 });
