@@ -16,7 +16,12 @@ window.addEventListener ('load', function () {
                 console.log(e.keys, this.keys);
             });
 
-            
+            window.addEventListener('keyup', e => {
+                if(e.key === 'ArrowDown'){
+                    this.keys.splice(this.keys.indexOf(e.key), 1);
+                }
+            console.log(e.keys, this.keys);
+            });
         }
     }
 
@@ -35,4 +40,10 @@ window.addEventListener ('load', function () {
     function handleEnemies(){
 
     }
+
+    function displayStatusText(){
+
+    }
+
+    const input = new InputHandler();
 });
