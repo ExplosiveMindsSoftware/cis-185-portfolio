@@ -1,10 +1,10 @@
 # README.md
 
 ## One Piece Endless Runner
-Name: Jorge Cordero
-Class: CIS185
-Assignment: Final
-Date: 9 December 2025
+Name: Jorge Cordero  
+Class: CIS185  
+Assignment: Final  
+Date: 9 December 2025  
 
 ## Project Overview
 
