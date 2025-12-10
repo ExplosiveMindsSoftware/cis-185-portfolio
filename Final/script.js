@@ -213,7 +213,7 @@ window.addEventListener ('load', function () {
             context.drawImage(
                 this.image, 
                 this.frameX * this.width, 
-                0, // Source Y (0 because it's a single row)
+                0,
                 this.width, this.height, 
                 this.x, this.y, 
                 this.width, this.height
