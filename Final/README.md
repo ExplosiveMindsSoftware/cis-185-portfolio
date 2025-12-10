@@ -8,7 +8,7 @@ Date: 9 December 2025
 
 ## Project Overview
 
-An simple endless runner with a One Piece theme
+An simple endless runner with a One Piece theme.
 
 
 ## Resources Used
@@ -24,3 +24,6 @@ Tutorial used: https://youtu.be/7JtLHJbm0kA
 Navy enemy: https://www.spriters-resource.com/game_boy_advance/onepiece/asset/18453/
 
 Luffy sprite: https://www.spriters-resource.com/wonderswan_wsc/onepiecegrandbattleswancolosseum/asset/12476/
+
+Background: https://itch.io/game-assets/tag-endless-runner/tag-pixel-art
+
